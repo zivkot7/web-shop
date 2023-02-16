@@ -36,7 +36,7 @@ const CartItem = (props) => {
             onClick={() => props.onDelete(id)}
           />
           <p>
-            {currencyFormat} {price.toFixed(2)}
+            {currencyFormat} {(quantity * price).toFixed(2)}
           </p>
           <span>
             <Button
